@@ -11,5 +11,5 @@ deltaSSE - delta Secure Storage Enclave is a hypercall interface for the deltaV 
 
 # How does it work?
   + deltaSSE has hypervisor call routines which inform deltaV hypervisor running in EL2 about your request.
-  + deltaV make the changes in its filesystem and returns relavant information.
+  + deltaV makes changes in its filesystem and returns relavant information.
   + deltaSSE support is added into deltaV so guest OS developers dont have to worry about it.
