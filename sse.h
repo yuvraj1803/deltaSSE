@@ -11,4 +11,5 @@ size_t  sse_fseek(int fd, uint64_t offset, int pos);
 void    sse_rewind(int fd);
 int     sse_fclose(int fd);
 
+
 #endif
