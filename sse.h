@@ -15,14 +15,14 @@
         Invalid Example:    hello.txt
 */
 
-int  sse_fread(char* buf, size_t size, size_t nmemb, int fd);
+int  sse_fread(char* filename, char* buf, size_t size);
 /*
     sse_fread reads from the hypervisor's filesystem into given buffer.
     nmemb number of units of size 'size' are read from file with descriptor 'fd'.
 
     Return Value:   Number of bytes read into given buffer.
 */
-int  sse_fwrite(char* buf, size_t size, size_t nmemb, int fd);
+int  sse_fwrite(char* filename, char* buf, size_t size);
 /*
     sse_fwrite writes to the hypervisor's filesystem from given buffer.
     nmemb number of units of size 'size' are written to file with descriptor 'fd'.
