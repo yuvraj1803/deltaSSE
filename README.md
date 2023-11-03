@@ -1,5 +1,7 @@
 # deltaSSE
 deltaSSE - delta Secure Storage Enclave is a hypercall interface for the deltaV bare metal hypervisor. This interface allows Hypervisor Based Storage Isolation.
+<img width="868" alt="Screenshot 2023-11-03 at 3 53 53 PM" src="https://github.com/yuvraj1803/deltaSSE/assets/37622719/be639c88-1b82-4f45-8aef-a6435eab9887">
+
 # API (param info in sse.h)
   + sse_fread()
   + sse_fwrite()
