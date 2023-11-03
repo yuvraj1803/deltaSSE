@@ -15,14 +15,6 @@
         Invalid Example:    hello.txt
 */
 
-int  sse_fopen(const char* filename, const char* mode);
-/*
-    sse_fopen opens a file in the hypervisor's filesystem.
-    "w" mode for write.
-    "r" mode for read.
-
-    Return Value: file descriptor which has to be managed by the guestOS.
-*/
 int  sse_fread(char* buf, size_t size, size_t nmemb, int fd);
 /*
     sse_fread reads from the hypervisor's filesystem into given buffer.
@@ -37,25 +29,4 @@ int  sse_fwrite(char* buf, size_t size, size_t nmemb, int fd);
 
     Return Value:   Number of bytes written into given buffer.
 */
-int     sse_fseek(int fd, uint64_t offset, int pos);
-/*
-    sse_fseek sets read/write pointer offset bytes ahead of pos.
-
-    Return Value:   Positive value if fseek was successful.
-*/
-int     sse_rewind(int fd);
-/*
-    sse_rewind sets read/write pointer to the beginning of the file.
-
-    Return Value:   Positive value if rewind was successful.
-*/
-int     sse_fclose(int fd);
-/*
-    sse_fclose closes file with descriptor 'fd'.
-
-    Return Value:   Positive value if file for closed.
-*/
-
-
-
 #endif
